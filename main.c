@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "person.h"
 
-void mostrarArreglo (Person arreglo[], int tama){
+void mostrarArreglo (Person arreglo[], size_t tama){
      printf ("\nArreglo de Personas:\n");
      printf ("%-20s %-10s %-10s\n", "Nombre", "Edad", "Altura(cm)");
-     for (int i=0; i<tama; i++){
+     for (size_t i=0; i<tama; i++){
          printf ("%-20s %-10d %-10.2f\n", arreglo[i].name, arreglo[i].age, arreglo[i].height);
      }
      printf ("\n");
@@ -21,7 +21,7 @@ int main (){
            {"Lilliam Cervantes", 52, 166.33},
     };
 
-    size_t tama = sizeof(Person)/sizeof(grupo[0]);
+    size_t tama = sizeof(grupo)/sizeof(grupo[0]);
 
     printf ("\nArreglo original\n");
     mostrarArreglo (grupo, tama);

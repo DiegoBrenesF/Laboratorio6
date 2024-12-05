@@ -6,7 +6,7 @@
 typedef struct {
         char name [MAX_NAME];
         int age;
-        double;
+        double height;
 } Person;
 
 int compare_by_name(const void *a, const void *b);

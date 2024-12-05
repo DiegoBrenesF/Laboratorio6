@@ -10,7 +10,7 @@ int compare_by_name (const void *a, const void *b){
 int compare_by_age (const void *a, const void *b){
     const Person *person_a = (const Person *)a;
     const Person *person_b = (const Person *)b;
-    return person_a->age - person_b->age);
+    return person_a->age - person_b->age;
 }
 
 int compare_by_height (const void *a, const void *b){
