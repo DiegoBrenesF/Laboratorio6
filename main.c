@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include "person.h"
 
+/*
+  Funcion para mostrar cada elemento de un arreglo de estructuras tipo Person.
+
+  Params
+  -Person arreglo[]: Arreglo de estructuras tipo Person.
+  -size_t tama: Tamano del arreglo de estructuras tipo Person.
+
+  Retorno
+  -No retorna.
+*/
 void mostrarArreglo (Person arreglo[], size_t tama){
      printf ("%-20s %-10s %-10s\n", "Nombre", "Edad", "Altura(cm)");
      for (size_t i=0; i<tama; i++){
